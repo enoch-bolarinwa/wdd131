@@ -1,64 +1,38 @@
-/* Reset some basic styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    display: grid;
-    grid-template-rows: auto 1fr auto; /* Header, Main, Footer */
-    min-height: 100vh;
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5; /* Light background color */
-    color: #333; /* Dark text color */
-}
-
-/* Header Styles */
-header {
-    background-color: #4CAF50; /* Green background */
-    padding: 20px;
-    text-align: center;
-    color: white;
-}
-
-/* Navigation Styles */
-nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 15px; /* Space between nav items */
-    list-style-type: none;
-    padding: 10px 0;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #d4d4d4;
-}
-
-/* Main Content */
-main {
-    padding: 20px;
-    background-color: #ffffff; /* White main content background */
-}
-
-/* Footer Styles */
-footer {
-    background-color: #333; /* Dark footer */
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-size: 0.9em;
-}
-
-/* Optional Responsive Adjustments */
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-    }
-}
+	display: grid;
+	height: 100vh;
+	grid-template: auto 1fr auto / 300px 1fr auto;
+  }
+  
+  header {
+	background: lightpink;
+	padding: 2rem;
+	grid-column: 1 / 4;
+  }
+  
+  .left-sidebar {
+	background: lightblue;
+	grid-column: 1 / 2;
+  }
+  
+  main {
+	background: coral;
+	grid-column: 2 / 3;
+  }
+  
+  .right-sidebar {
+	background: yellow;
+	grid-column: 3 / 4;
+  }
+  
+  footer {
+	background: wheat;
+	padding: 2rem;
+	text-align: center;
+	grid-column: 1 / 4;
+  }
+  
+  .left-sidebar,
+  .right-sidebar {
+	padding: 1rem;
+  }
