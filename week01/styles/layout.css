@@ -22,7 +22,7 @@ body {
   
   .right-sidebar {
 	background: yellow;
-	grid-column: 3 / 4;
+	grid-column: 1 / 4;
   }
   
   footer {
