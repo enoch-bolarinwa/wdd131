@@ -4,4 +4,11 @@ body {
     margin: 0;
     padding: 0;
     color: #333;  }
-    
+    /* Color Scheme */
+:root {
+    --primary-color: #00509e;
+    --secondary-color: #a8dadc;
+    --background-color: #f1faee;
+    --text-color: #1d3557;
+    --hover-color: #457b9d;
+  }
