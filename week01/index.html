@@ -50,15 +50,16 @@
     <footer>
         <p>&copy; <span id="currentyear"></span> Enoch Oluwafemi Bolarinwa, Nigeria.</p>
         <p id="lastModified"></p>
-      </footer>
+        <script>
+            // JavaScript to populate the current year
+            document.getElementById("currentyear").textContent = new Date().getFullYear();
+          
+            // JavaScript to populate the last modified date
+            document.getElementById("lastModified").textContent = "Last modified: " + document.lastModified;
+          </script>
+    </footer>
       
-      <script>
-        // JavaScript to populate the current year
-        document.getElementById("currentyear").textContent = new Date().getFullYear();
       
-        // JavaScript to populate the last modified date
-        document.getElementById("lastModified").textContent = "Last modified: " + document.lastModified;
-      </script>
    
 </body>
 </html>
