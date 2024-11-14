@@ -1,4 +1,11 @@
 /* Google Font Setup */
+.me img { 
+    float:right}
+.profile{
+    width: 128px;
+    height: auto;
+    magin-right: 2rem;
+}
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
