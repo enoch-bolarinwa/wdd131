@@ -1,6 +1,7 @@
 /* Google Font Setup */
 .me img { 
-    float:right}
+    float:left
+}
 .profile{
     width: 128px;
     height: auto;
