@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Your Full Name. Keywords: web development, BYUI, project, fundamentals.">
+    <meta name="author" content="Your Full Name">
+
+    <!-- Title -->
+    <title>WDD 131 - Dynamic Web Fundamentals - Your Name</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/" target="_blank">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Favorite Scripture</a></li>
+                <li><a href="#" target="_blank">Final Project Folder</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="card">
+            <h2>Card Heading 1</h2>
+            <p>Content for the first section. This can include information about your project or a description of your web development journey.</p>
+            <img src="image1.jpg" alt="An example image">
+            <ul>
+                <li><a href="https://resource1.com" target="_blank">Resource Link 1</a></li>
+                <li><a href="https://resource2.com" target="_blank">Resource Link 2</a></li>
+                <li><a href="https://resource3.com" target="_blank">Resource Link 3</a></li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Card Heading 2</h2>
+            <p>Content for the second section. This could be additional insights, favorite tools, or personal notes.</p>
+            <img src="image2.jpg" alt="An example image">
+            <ul>
+                <li><a href="https://resource4.com" target="_blank">Resource Link 4</a></li>
+                <li><a href="https://resource5.com" target="_blank">Resource Link 5</a></li>
+                <li><a href="https://resource6.com" target="_blank">Resource Link 6</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Your Name. Your State or Country.</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Dynamically populate the year
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+        // Populate last modified date
+        document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+    </script>
+</body>
+</html>
