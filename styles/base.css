@@ -41,3 +41,13 @@ footer p {
     margin: 5px 0;
 }
 
+footer {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.9em;
+}
+
+
+
