@@ -11,6 +11,19 @@ header, footer {
     padding: 10px;
     text-align: center;
 }
+
+.navbar a {
+    color: var(--background-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    background-color: var(--hover-color);
+    border-radius: 5px;}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -26,6 +39,13 @@ nav ul li a {
 main {
     padding: 20px;
 }
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
 .card {
     border: 1px solid #ddd;
     border-radius: 5px;
