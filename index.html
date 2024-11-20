@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Enoch Bolarinwa. Explore topics related to dynamic web design and development.">
+    <meta name="author" content="Enoch Bolarinwa">
+    <title>WDD 131 - Dynamic Web Fundamentals - Enoch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    
+</head>
+<body>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals</h1>
+        <nav>
+            <ul>
+                <li><a href="[Your LinkedIn Profile Link]" target="_blank">LinkedIn Profile</a></li>
+                <li><a href="https://byui.instructure.com/" target="_blank">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Favorite Scripture</a></li>
+                <li><a href="#" target="_blank">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/enochpic.jpg">
+            <p>My name is Enoch Bolarinwa, i am a passionate lover of God with the mandate of making the world a better place. I love Christ and enjoyed helping and doing God's work. Currently i work with Reeds and i hope to settle down soon by having a family of my own.</p>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>Brief History Of Nigeria</h2>
+            <img src="images/nigeriaflag.png" alt="official flag of Nigeria">
+            <p>Visited by Europeans in the 15th century, it became a centre for the trade in enslaved people.
+                The area came under British control in 1861 and was made a British colony in 1914.
+                Nigeria gained independence in 1960 and became a republic in 1963.
+                In the late 17th to early 18th centuries, Oyo was at its zenith and expanded its influence from western Nigeria to present-day Togo.
+                The Benin Empire had sovereignty over the region between the 15th and 19th centuries.</p>
+            <ul>
+                <li><a href="https://javascript.info/" target="_blank">The Modern JavaScript Tutorial</a></li>
+                <li><a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a></li>
+                <li><a href="https://eloquentjavascript.net/" target="_blank">Eloquent JavaScript</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> ENOCH BOLARINWA, NIGERIA.</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        // Populate current year dynamically
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Populate last modified date dynamically
+        document.getElementById('lastModified').textContent = "Last Updated: " + document.lastModified;
+    </script>
+</body>
+</html>
+
+
+
+
