@@ -1,8 +1,8 @@
 /* Google Fonts */
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     background-color: #f5f5f5;
     color: #333;
     line-height: 1.6;
@@ -13,7 +13,7 @@ header {
     background-color: #4a90e2;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 2px 0px;
 }
 
 /* Navigation */
@@ -21,12 +21,12 @@ nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    padding: 0;
-    margin: 10px 0;
+    padding: 10px;
+    margin: 10px 0px;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 0px;
     color: #333;
 }
 
@@ -34,7 +34,7 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    padding: 8px 15px;
+    padding: 0px 0px;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -47,8 +47,8 @@ nav ul li a:hover {
 /* Main */
 main {
     max-width: 1200px;
-    margin: 20px auto;
-    padding: 10px;
+    margin: 10px auto;
+    padding: 0px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -65,9 +65,13 @@ main .card {
     margin-bottom: 20px;
     background-color: #fff;
 }
-
+/*Sections*/
+main.section{
+padding: 0px;
+margin-bottom: 0px;
+}
 main .card img {
-    width: 30%;
+    width: 20%;
     height: auto;
     border-radius: 5px;
 }
@@ -82,7 +86,7 @@ footer {
     background-color: #4a90e2;
     color: white;
     text-align: center;
-    padding: 15px 10px;
+    padding: 0px 10px;
     font-size: 0.9em;
 }
 
