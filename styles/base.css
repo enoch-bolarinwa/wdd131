@@ -1,0 +1,58 @@
+
+header{
+    background-color: #4a90e2;
+    padding: 2px 0;
+    text-align: center;
+}
+
+nav ul {
+    background-color: grey;
+    list-style: none;
+    padding: 15px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 5px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Cards */
+main .card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 4px;
+    background-color: #fff;
+}
+
+main .card img {
+    width: 10%;
+    height: auto;
+    border-radius: 5px;
+}
+main .card h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #4a90e2;
+    float:center;
+
+}
+
+
+footer {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
