@@ -7,3 +7,13 @@ li.textContent = input.value;
 deleteButton.textcontent = 'x';
 li.append(deleteButton);
 list.append(li);
+button.addEventListener('click', function() {
+    // Code to execute when the button is clicked
+  });
+  if (input.value.trim() !== ''){button.addEventListener('click', function())}
+    deleteButton.addEventListener('click', function () {
+        list.removeChild(li);
+        input.focus();
+      });
+      input.value = '';
+      input.focus();
