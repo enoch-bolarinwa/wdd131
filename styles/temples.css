@@ -20,10 +20,26 @@ header h1 {
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
+    display: inline-block;
+    color: white;
+    justify-content: space-around;
     padding: 0;
     list-style: none;
+}
+
+/* Initially hide the navigation menu items on mobile view */
+#navMenu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hamburger icon for mobile view */
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+    color: white;
 }
 
 nav ul li {
@@ -92,6 +108,16 @@ footer {
         grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
     }
 }
+
+/* Show the navigation menu on larger screens */
+#navMenu {
+    display: flex;
+}
+
+    /* Hide hamburger icon on larger screens */
+    .hamburger {
+        display: none;
+    }
 
 @media (min-width: 64rem) {
     section {

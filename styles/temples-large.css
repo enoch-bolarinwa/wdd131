@@ -1,0 +1,12 @@
+/* Larger screen styling for desktop or larger screens */
+@media (min-width: 32rem) {
+    section {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+}
+
+@media (min-width: 64rem) {
+    section {
+        grid-template-columns: repeat(3, 1fr); /* Three columns */
+    }
+}
