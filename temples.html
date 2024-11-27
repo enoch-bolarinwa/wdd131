@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for mobile-first development -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the document -->
+    <title>Temples Album</title>
+
+    <!-- Link to the base CSS file for mobile-first design (default styles) -->
+    <link rel="stylesheet" href="styles/temples.css">
+
+    <!-- Link to larger screen CSS file (for wider screens) -->
+    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 32rem)">
+
+    <!-- Link to another CSS file for even larger screens (optional for multi-breakpoint designs) -->
+    <link rel="stylesheet" href="extra-large.css" media="screen and (min-width: 64rem)">
+
+    <!-- Deferred script reference to the JavaScript file -->
+    <script src="temples.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Main content of the page -->
+    <header>
+        <!-- Heading of the page that matches the title -->
+        <h1>Temples Album</h1>
+
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <a href="#home">Home</a>
+                <a href="#old">Old</a>
+                <a href="#new">New</a>
+                <a href="#large">Large</a>
+                <a href="#small">Small</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Main content section for the page will go here -->
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> ENOCH BOLARINWA, NIGERIA.</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        // Populate current year dynamically
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Populate last modified date dynamically
+        document.getElementById('lastModified').textContent = "Last Updated: " + document.lastModified;
+    </script>
+
+</body>
+
+</html>
