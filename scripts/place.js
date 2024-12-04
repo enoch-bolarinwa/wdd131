@@ -1,11 +1,15 @@
 // Footer: Display the current year and last modified date
-const footer = document.querySelector("footer");
-const currentYear = new Date().getFullYear();
-const lastModified = document.lastModified;
 
-footer.innerHTML = `
-  &copy; ${currentYear} UAE Information | Last Modified: ${lastModified}
-`;
+
+// Dynamically set the copyright year
+const currentYearSpan = document.getElementById('currentYear'); // Target the span for the copyright year
+const currentYear = new Date().getFullYear(); // Get the current year
+currentYearSpan.textContent = currentYear; // Set the year dynamically
+
+// Dynamically set the last modified date
+const lastModifiedParagraph = document.getElementById('lastModified'); // Target the paragraph for last modified
+const lastModifiedDate = document.lastModified; // Get the document's last modified date
+lastModifiedParagraph.textContent = `Last Updated: ${lastModifiedDate}`; // Set the last modified text
 
 // Static values for temperature and wind speed
 const temperature = 35; // °C
