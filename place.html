@@ -54,5 +54,12 @@
         <p>&copy; 2024 Enoch Bolarinwa • United Arab Emirates</p>
         <p>Last Modification: 02/08/2024 22:47:47</p>
     </footer>
+    <script>
+        // Populate current year dynamically
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Populate last modified date dynamically
+        document.getElementById('lastModified').textContent = "Last Updated: " + document.lastModified;
+    </script>
 </body>
 </html>
