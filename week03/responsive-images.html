@@ -19,15 +19,13 @@
     </header>
     
     <main>
-        <section>
-            <h2>Responsive Image Demonstration</h2>
-            <p>This example demonstrates the use of the <code>&lt;picture&gt;</code> element for responsive images.</p>
+        <div class="hero">
             <picture>
-                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
-                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
-                <img src="images/hero-large.webp" alt="Hero Photo" width="1000" height="500">
+              <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+              <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+              <img src="images/hero-small.webp" alt="Temple name and location" width="500" height="250">
             </picture>
-        </section>
+          </div>
     </main>
     
     <footer>
