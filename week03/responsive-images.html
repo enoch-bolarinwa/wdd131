@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <header>
+        <h1>Responsive Images Example</h1>
+        <nav>
+            <ul>
+                <li><a href="#section1">Home</a></li>
+                <li><a href="#section2">About</a></li>
+                <li><a href="#section3">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Responsive Image Demonstration</h2>
+            <p>This example demonstrates the use of the <code>&lt;picture&gt;</code> element for responsive images.</p>
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/hero-large.webp" alt="Hero Photo" width="1000" height="500">
+            </picture>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Responsive Images Inc.</p>
+    </footer>
+    <script src="script.js" defer></script> <!-- Link to external JavaScript -->
+</body>
+</html>
