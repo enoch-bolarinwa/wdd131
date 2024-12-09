@@ -1,0 +1,23 @@
+
+.temple-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+.temple-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+nav {
+    margin-bottom: 20px;
+}
+nav button {
+    margin: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
