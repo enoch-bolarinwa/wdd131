@@ -22,5 +22,18 @@
     <div id="temples-container"></div>
 
     <script src="filtered-temples.js"></script>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> ENOCH BOLARINWA, NIGERIA.</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        // Populate current year dynamically
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Populate last modified date dynamically
+        document.getElementById('lastModified').textContent = "Last Updated: " + document.lastModified;
+    </script>
+
 </body>
 </html>
