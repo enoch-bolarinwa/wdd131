@@ -131,7 +131,7 @@ const temples = [
         const area = document.createElement("p");
         area.textContent = `Total Area: ${temple.area}`;
 
-        // Append elements to card
+       
         card.appendChild(image);
         card.appendChild(name);
         card.appendChild(location);
@@ -142,31 +142,3 @@ const temples = [
         container.appendChild(card);
     });
 }
-    function filterTemples(filter) {
-        let filteredTemples;
-    
-        switch (filter) {
-            case "old":
-                filteredTemples = temples.filter(temple => {
-                    const year = parseInt(temple.dedicated.split(",").pop().trim());
-                    return year < 1900;
-                });
-                break;
-            case "new":
-                filteredTemples = temples.filter(temple => {
-                    const year = parseInt(temple.dedicated.split(",").pop().trim());
-                    return year > 2000;
-                });
-                break;
-            case "large":
-                filteredTemples = temples.filter(temple => temple.area > 90000);
-                break;
-            case "small":
-                filteredTemples = temples.filter(temple => temple.area < 10000);
-                break;
-            case "home":
-            default:
-                filteredTemples = temples; // Show all temples
-                break;
-        }
-    }
