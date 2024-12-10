@@ -3,99 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple Cards</title>
+    <meta name="description" Picture Album Enhancement="WDD 131 - Dynamic Web Fundamentals - Enoch Bolarinwa. Explore topics related to dynamic web design and development.">
+    <meta name="author" content="Enoch">
+    <title>Temples</title>
+    <link href=styles/filtered-temples.css rel=stylesheet>
+    <script src="filtered-temples.js" defer></script>
+
 </head>
 <body>
     <header>
-        <h1>Temple Cards</h1>
-    <div id="temples-container"></div>
-
-    <script src="filtered-temples.js"></script>
-        <h1>Filter Temples</h1>
-    <nav>
-        <button onclick="filterTemples('old')">Old</button>
-        <button onclick="filterTemples('new')">New</button>
-        <button onclick="filterTemples('large')">Large</button>
-        <button onclick="filterTemples('small')">Small</button>
-        <button onclick="filterTemples('home')">Home</button>
-    </nav>
-    <div id="temples-container"></div>
+        <h1 class="handler">Temple Album</h1>
+        <a href="#" id="hambutton"></a>
+       <nav id="navmenu>"
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
     </header>
     <main>
+        <h2>Home</h2>
+        <div class="res-grid">
         <section>
-            <figure>
-                <img src=https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg">
-                <figcaption>
-                    <strong>Aba Nigeria Temple</strong>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg">
-                <figcaption>
-                    <strong>Manti Utah Temple</strong>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg">
-                <figcaption>
-                    <strong>Payson Utah Temple</strong>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg">
-                <figcaption>
-                    <strong>Yigo Guam Temple</strong>
-                </figcaption>
-            </figure>
-            <figure>
-                    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg">
-                    <figcaption>
-                        <strong>washington-dc Temple</strong>
-                    </figcaption>
-                </figure>
-            <figure>
-                <img src="https://churchofjesuschristtemples.org/assets/img/temples/birmingham-alabama-temple/400x250/birmingham-alabama-temple-21774-main.jpg">
-                <figcaption>
-                    <strong>Birmingham Alabama Temple</strong>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="https://churchofjesuschristtemples.org/assets/img/temples/_temp/400x250/056-Madrid-Spain-Temple.jpg">
-                <figcaption>
-                    <strong>Madrid Temple</strong>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg">
-                <figcaption>
-                    <strong>Mexico City Temple</strong>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg">
-                <figcaption>
-                    <strong>Lima Peru Temple</strong>
-                </figcaption>
-            </figure>
+            <h2>Aba Nigeria</h2>
+            <P>Location:Aba, Nigeria</P>
+            <P>Dedication: 2005, August 11</P>
+            <P>Size: 11500sq ft</P>
+            <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg">
         </section>
+    <section>
+        <h3>Manti Utah</h3>
+        <P>Location:Manti Utah USA</P>
+        <P>Dedication: 1888, May 21</P>
+        <P>Size: 11500sq ft</P>
+        <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg">
+</section>
+<section>
+    <h4>Payson Utah</h4>
+    <P>Location:Payson Utah USA</P>
+    <P>Dedication: 2015, June 7</P>
+    <P>Size: 96630sq ft</P>
+    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg">
+</section>
+<section>
+    <h5>Yigo Guam</h5>
+    <P>Location:Yigo Guam</P>
+    <P>Dedication: 2020, May 2</P>
+    <P>Size: 6861sq ft</P>
+    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg">
+</section>
+<section>
+    <h6>Washington DC</h6>
+    <P>Location:Kensington, Maryland, USA </P>
+    <P>Dedication: 1974, November 19</P>
+    <P>Size: 156558sq ft</P>
+    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg">
+</section>
+<section>
+    <h7>Lima</h7>
+    <P>Location:Lima, Peru </P>
+    <P>Dedication: 1986, January 10</P>
+    <P>Size: 9600sq ft</P>
+    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg">
+</section>
+<section>
+    <h8>Mexico City</h8>
+    <P>Mexico</P>
+    <P>Dedication: 1983, December 2</P>
+    <P>Size: 116642sq ft</P>
+    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg">
+</section>
+       </div>
     </main>
-
-    
-
-    <script src="filtered-temples.js"></script>
-</body>
-    
-
-    <footer>
-        <p>&copy; <span id="currentYear"></span> ENOCH BOLARINWA, NIGERIA.</p>
-        <p id="lastModified"></p>
-    </footer>
+<footer> <p>&copy; <span id="currentYear"></span> ENOCH BOLARINWA, NIGERIA.</p>
+    <p id="lastModified"></p></footer>
     <script>
 
         document.getElementById('currentYear').textContent = new Date().getFullYear();
 
         document.getElementById('lastModified').textContent = "Last Updated: " + document.lastModified;
     </script>
-
 </body>
 </html>
