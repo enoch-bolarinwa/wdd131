@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const products = [
+                { id: "fc-1888", name: "flux capacitor", averagerating: 4.5 },
+                { id: "fc-2050", name: "power laces", averagerating: 4.7 },
+                { id: "fs-1987", name: "time circuits", averagerating: 3.5 },
+                { id: "ac-2000", name: "low voltage reactor", averagerating: 3.9 },
+                { id: "jj-1969", name: "warp equalizer", averagerating: 5.0 },
+            ];
+
+            const productSelect = document.getElementById("productName");
+
+            products.forEach(product => {
+                const option = document.createElement("option");
+                option.value = product.id;
+                option.textContent = product.name;
+                productSelect.appendChild(option);
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <label for="productName">Product Name:</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Choose a Product ...</option>
+                <!-- Options will be populated dynamically by JavaScript -->
+            </select>
+
+            <label>Overall Rating:</label>
+            <div class="rating">
+                <label><input type="radio" name="rating" value="1" required> ★</label>
+                <label><input type="radio" name="rating" value="2"> ★★</label>
+                <label><input type="radio" name="rating" value="3"> ★★★</label>
+                <label><input type="radio" name="rating" value="4"> ★★★★</label>
+                <label><input type="radio" name="rating" value="5"> ★★★★★</label>
+            </div>
+
+            <label for="installationDate">Date of Installation:</label>
+            <input type="date" id="installationDate" name="installationDate" required>
+
+            <label>Which features did you find useful in the product? (Check all that apply)</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="features" value="Durability"> Durability</label><br>
+                <label><input type="checkbox" name="features" value="Ease of Use"> Ease of Use</label><br>
+                <label><input type="checkbox" name="features" value="Performance"> Performance</label><br>
+                <label><input type="checkbox" name="features" value="Design"> Design</label>
+            </div>
+
+            <label for="review">Written Review (Optional):</label>
+            <textarea id="review" name="review" placeholder="Write your review here..."></textarea>
+
+            <label for="name">Your Name (Optional):</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+
+            <button type="submit">Post Review</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;2024 🌸 Enoch Bolarinwa 🌸 Nigeria<br>
+        Last Modification: 02/26/2024 13:56:10</p>
+    </footer>
+</body>
+</html>
