@@ -3,86 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Enhanced Temple Picture Album is a project work of BYU students studying Dynamic Web Fundamentals">
+    <meta name="description" content="This assignment applies the concepts presented in the learning activities to enhance a previous assignment by incorporating lazy loading and to respond to user interaction by filtering the displayed temple data.">
     <meta name="author" content="Enoch Bolarinwa">
-    <title>Temple Album Card Design</title>
-    <link rel="stylesheet" href=styles/filtered-temples.css>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Temple Album</title>
     <script src="filtered-temples.js" defer></script>
-
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav {
+            background-color: #4a154b;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        nav li {
+            cursor: pointer;
+            color: white;
+        }
+        #templeContainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .temple-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            max-width: 250px;
+            text-align: center;
+        }
+        .temple-card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1 class="handler">Temple Album Card Design</h1>
-        <a href="#" id="hambutton"></a>
-       <nav id="navmenu>"
-            <a href="#">Home</a>
-            <a href="#">Old</a>
-            <a href="#">Large</a>
-            <a href="#">Small</a>
-        </nav>
+        <h1>Temple Album</h1>
     </header>
+    <nav>
+        <ul id="menu">
+            <li data-filter="home">Home</li>
+            <li data-filter="old">Old</li>
+            <li data-filter="new">New</li>
+            <li data-filter="large">Large</li>
+            <li data-filter="small">Small</li>
+        </ul>
+    </nav>
     <main>
-        <div class="res-grid">
-        <section>
-            <h2>Aba Nigeria</h2>
-            <P>Location:Aba, Nigeria</P>
-            <P>Dedication: 2005, August 11</P>
-            <P>Size: 11500sq ft</P>
-            <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg">
-        </section>
-    <section>
-        <h3>Manti Utah</h3>
-        <P>Location:Manti Utah USA</P>
-        <P>Dedication: 1888, May 21</P>
-        <P>Size: 11500sq ft</P>
-        <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg">
-</section>
-<section>
-    <h4>Payson Utah</h4>
-    <P>Location:Payson Utah USA</P>
-    <P>Dedication: 2015, June 7</P>
-    <P>Size: 96630sq ft</P>
-    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg">
-</section>
-<section>
-    <h5>Yigo Guam</h5>
-    <P>Location:Yigo Guam</P>
-    <P>Dedication: 2020, May 2</P>
-    <P>Size: 6861sq ft</P>
-    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg">
-</section>
-<section>
-    <h6>Washington DC</h6>
-    <P>Location:Kensington, Maryland, USA </P>
-    <P>Dedication: 1974, November 19</P>
-    <P>Size: 156558sq ft</P>
-    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg">
-</section>
-<section>
-    <h7>Lima</h7>
-    <P>Location:Lima, Peru </P>
-    <P>Dedication: 1986, January 10</P>
-    <P>Size: 9600sq ft</P>
-    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg">
-</section>
-<section>
-    <h8>Mexico City</h8>
-    <P>Mexico</P>
-    <P>Dedication: 1983, December 2</P>
-    <P>Size: 116642sq ft</P>
-    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg">
-</section>
-       </div>
+        <div id="templeContainer"></div>
     </main>
-<footer> <p>&copy; <span id="currentYear"></span> ENOCH BOLARINWA, NIGERIA.</p>
-    <p id="lastModified"></p></footer>
-    <script>
-
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-        document.getElementById('lastModified').textContent = "Last Updated: " + document.lastModified;
-    </script>
 </body>
+<script src="script.js"></script>
 </html>
