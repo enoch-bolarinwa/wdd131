@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Executives</title>
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Contact Details of Executives</h1>
+        <ul>
+            <li><strong>President:</strong> Elimelech Abidemi - elimelech.abidemi@example.com</li>
+            <li><strong>Secretary:</strong> Ayomikun Adenike - adenike.ayomikun@example.com</li>
+        </ul>
+        <img src="images/enochpic.jpg" alt="Youth Executives" loading="lazy">
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> ENOCH BOLARINWA, NIGERIA.</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        // Populate current year dynamically
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Populate last modified date dynamically
+        document.getElementById('lastModified').textContent = "Last Updated: " + document.lastModified;
+    </script>
+</body>
+</html>

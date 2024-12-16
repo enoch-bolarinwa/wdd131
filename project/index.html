@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Youth Club</title>
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to the Christian Youth Club</h1>
+        <p>
+            The Christian Youth Club is an avenue for youth in the kingdom to network online, 
+            share ideas, and help each other grow in the Christian faith with the sole aim of eternity at heart.
+            Unity in the body of Christ is needed in this end-time. A house divided against itself cannot stand. 
+            Ephesians Chapter 4 made mention of One Lord, One Faith and One Baptism. 
+        </p>
+        <img src="images/youth_club.jpg" alt="Christian Youth Club" loading="lazy">
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> ENOCH BOLARINWA, NIGERIA.</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        // Populate current year dynamically
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Populate last modified date dynamically
+        document.getElementById('lastModified').textContent = "Last Updated: " + document.lastModified;
+    </script>
+</body>
+</html>
