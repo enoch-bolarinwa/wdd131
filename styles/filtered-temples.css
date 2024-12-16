@@ -1,64 +1,43 @@
-body {
-    font-family : Arial, sans-serif;
-    margin : 0;
-    padding : 0;
-    text-align : center;
-    background-color : #f4f4f4;
-    }
-    header {
-    background-color : #0066cc;
-    color : white;
-    padding : 0 0;
-    text-align : center;
-    }
-    section h2 {
-    padding : 0;
-    }
-    section img {
-    display:inline-flexbox;
-    width : 20%;
-    height : auto;
-    margin-top : 0;
-    box-shadow : 0 0 50px #333;
-    }
-    nav {
-    margin : 20px 0;
-    }
-    nav button {
-    margin : 5px;
-    padding : 10px 20px;
-    background-color : #007BFF;
-    color : white;
-    border : none;
-    border-radius : 5px;
-    cursor : pointer;
-    }
-    nav button:hover {
-    background-color : #0056b3;
-    }
-    .temple-container {
-    display : inline-block;
-    flex-wrap : wrap;
-    justify-content : center;
-    gap : 2px;
-    margin : 2px;
-    }
-    .temple-card {
-    border : #ccc solid 5px;
-    border-radius : 10px;
-    width : 300px;
-    padding : 0;
-    box-shadow : 10px 10px 5px rgb(0, 0, 0, 0.1);
-    text-align : center;
-    }
-    .temple-card img {
-    width : 100%;
-    height : auto;
-    border-radius : 10px;
-    }
-    footer {
-    background-color : blue;
-    color : white;
-    text-align : center;
-    padding : 0;
-    }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav {
+            background-color: #4a154b;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        nav li {
+            cursor: pointer;
+            color: white;
+        }
+        #templeContainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .temple-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            max-width: 250px;
+            text-align: center;
+        }
+        .temple-card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+    
+
