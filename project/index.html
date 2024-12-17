@@ -3,8 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Christian Youth Club is a final website project of comprehensive assessment of the course learning outcomes giving me an opportunity to demonstrate my mastery of the course learning outcomes in HTML, CSS, and JavaScript to create a dynamic and responsive website that adheres to development standards..">
+    <meta name="author" content="Enoch Bolarinwa">
     <title>Christian Youth Club</title>
     <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/base.js" defer></script>
+    <script>document.addEventListener("DOMContentLoaded", () => {
+        const form = document.getElementById("registrationForm");
+        const confirmationMessage = document.getElementById("confirmationMessage");
+    
+        form?.addEventListener("submit", (e) => {
+            e.preventDefault();
+    
+            const name = document.getElementById("name").value;
+            localStorage.setItem("userName", name);
+    
+            confirmationMessage.textContent = `Thank you, ${name}, for registering!`;
+            confirmationMessage.style.display = "block";
+    
+            form.reset();
+        });
+    });
+    </script>
 </head>
 <body>
     <header>
@@ -18,14 +38,42 @@
     </header>
 
     <main>
+        
         <h1>Welcome to the Christian Youth Club</h1>
+        <img src="images/cyc6.jpg" alt="unity pic" style="width:80%; max-width:300px;">
         <p>
             The Christian Youth Club is an avenue for youth in the kingdom to network online, 
             share ideas, and help each other grow in the Christian faith with the sole aim of eternity at heart.
             Unity in the body of Christ is needed in this end-time. A house divided against itself cannot stand. 
-            Ephesians Chapter 4 made mention of One Lord, One Faith and One Baptism. 
+            Ephesians Chapter 4 verse 5 made mention of One Lord, One Faith and One Baptism. 
         </p>
-        <img src="images/youth_club.jpg" alt="Christian Youth Club" loading="lazy">
+        
+        <h2>Significance of Christian Youth Club</h2>
+        <p>Importance of youth in the church: Youth are important because they represent the future of the faith community and bring fresh perspectives and enthusiasm.</p>
+        <p>Balance between fun and teaching: Youth ministry aims to create a balance between fun activities and teaching adolescents about God.</p>
+        <img src="images/christianyouthclub.jpg" alt="Christian Youth Club" loading="lazy">
+        
+        <h2>Mission Statement</h2>
+        <p>Creating opportunities for service: Providing opportunities for youth to serve in the church and community </p>
+        <p> Leading youth to worship: Guiding youth to experience true spiritual worship and celebrate God's presence </p>   
+        <p> Building relationships: Encouraging youth to build loving relationships with parents, others, and each other </p>  
+        <img src="images/cyc4.jpg" alt="Christian Youth" loading="lazy">
+   
+        <h3>Future Events</h3>
+        <p>Musical Concert</p>
+        <img src="images/cyc5.jpg" alt="Christian Youth" loading="lazy">
+
+        <p>Basketball Competition</p>
+        <img src="images/cyc3.jpg" alt="Christian Youth" loading="lazy">
+
+        <p>Music Training</p>
+        <img src="images/cyc2.jpg" alt="Christian Youth" loading="lazy">
+
+        <p>To Register For Future Events, Click The Link Below</p>
+        <li><a href="register.html">Register</a></li>
+        
+   
+
     </main>
 
     <footer>
